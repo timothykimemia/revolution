@@ -1,0 +1,34 @@
+{
+    "name": "revolution/network",
+    "description": "Revolution network package",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Timothy Kimemia",
+            "email": "timothykimemia01@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Revolution\\Network\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Revolution\\Network\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Revolution\\Network\\RevolutionNetworkServiceProvider"
+            ]
+        }
+    }
+}
